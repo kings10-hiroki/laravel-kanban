@@ -32,7 +32,7 @@
                     <li>
                         <ul class="header_menu_inner">
                             <li>
-                                <a class="nav-link listNew" href="#">リスト作成</a>
+                                <a class="nav-link listNew" href="{{ route('new') }}">リスト作成</a>
                             </li>
                             <li>
                                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">

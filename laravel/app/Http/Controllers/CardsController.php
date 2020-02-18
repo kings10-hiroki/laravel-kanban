@@ -27,11 +27,11 @@ class CardsController extends Controller
             return redirect()->back()->withErrors($validator->errors())->withInput();
         }
 
-        $cards = new Cards;
+        $cards = new Card;
         $cards->title = $request->card_title;
-        $cards->listing_id = $request->card_listing_id;
         $cards->memo = $request->card_memo;
-
+        $cards->listing_id = $request->listing_id;
+        
         $cards->save();
 
         return redirect('/');

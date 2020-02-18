@@ -16992,6 +16992,57 @@ body {
   color: #8c8c8c;
 }
 
+.topPage .listWrapper .list .cardWrapper {
+  overflow-y: scroll;
+  max-height: 76vh;
+}
+
+.topPage .listWrapper .list .cardWrapper .cardDetail_link {
+  text-decoration: none;
+  color: #323232;
+}
+
+.topPage .listWrapper .list .cardWrapper .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.topPage .listWrapper .list .cardWrapper .card_title {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  font-size: 17px;
+}
+
+.topPage .listWrapper .list .cardWrapper .card_detail {
+  display: none;
+}
+
+.topPage .listWrapper .list .cardWrapper .card_detail.is-exist {
+  display: block;
+  color: #999;
+}
+
+.topPage .listWrapper .list .cardWrapper .card_detail.is-exist > i {
+  display: block;
+}
+
+.topPage .listWrapper .list .cardWrapper .addCard {
+  color: #8c8c8c;
+}
+
+.topPage .listWrapper .list .cardWrapper .addCard_link {
+  color: #8c8c8c;
+}
+
 .listnewPage .new_list {
   max-width: 500px;
   margin: 100px auto 0;
@@ -17004,5 +17055,84 @@ body {
 .listeditPage .listForm {
   max-width: 500px;
   margin: 100px auto 0;
+}
+
+.cardeditPage .cardeditForm {
+  max-width: 500px;
+  margin: 70px auto 0;
+}
+
+.cardeditPage .cardeditForm_title,
+.cardeditPage .cardeditForm_memo {
+  margin-bottom: 30px;
+}
+
+.cardnewPage .cardnewForm {
+  max-width: 500px;
+  margin: 70px auto 0;
+}
+
+.cardnewPage .cardnewForm_title,
+.cardnewPage .cardnewForm_memo {
+  margin-bottom: 30px;
+}
+
+.carddetailPage .cardContents {
+  max-width: 600px;
+  margin: 60px auto 0;
+}
+
+.carddetailPage .cardContents_title h2 {
+  font-size: 22px;
+}
+
+.carddetailPage .cardContents_title,
+.carddetailPage .cardContents_memo,
+.carddetailPage .cardContents_listStatus {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.carddetailPage .cardContents_btnArea {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.carddetailPage .cardContents_btnArea > a {
+  display: block;
+}
+
+.carddetailPage .cardContents_btnArea > a.edit_btn {
+  max-width: 200px;
+  margin: 0 auto;
+  background: #026aa7;
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+  transition: opacity 0.5s;
+  text-decoration: none;
+}
+
+.carddetailPage .cardContents_btnArea > a.edit_btn:hover {
+  opacity: 0.7;
+}
+
+.carddetailPage .cardContents_btnArea > a.delete_btn {
+  margin-top: 20px;
+}
+
+.submitBtn {
+  background: #29b744;
+  color: #fff;
+  width: 200px;
+  margin: 20px 0 20px;
+  padding: 10px;
+  border-radius: 90px;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  opacity: 0.6;
 }
 
